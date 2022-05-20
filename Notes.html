@@ -1,0 +1,710 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mynotes.css" />
+    <title>My Css Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/up.css" />
+    <link rel="stylesheet" href="css/hand.css" />
+
+</head>
+
+<body>
+    <h1>
+        ملخص الدرس هتلاقيه هنا
+        <a href="#first"> <i class="fa fa-hand-o-down" aria-hidden="true"></i></a>
+    </h1>
+    <br id="first"><br><br>
+    <ol>
+        <br>
+        <li>
+            تغييراتجاه الكلام من الشمال لليمين او العكس بخاصية
+            <code dir="ltr"> dir="ltr" or"rtl"</code> وبتتكتب عند تاجة ال html (وكدا
+            اتجاه كل كلام الصفحه هيتغير بناءا عل زي مااخترت) او داخل اي تاجة كتابه
+        </li>
+        <li>
+            البوردر بيكتب كدا  <code dir="ltr"> border:(لونه نوعه حجم)</code>
+        </li>
+        <li>
+            <code>lineargradiant</code> دي بتستخم كدا<code dir="ltr">background-image: linear-gradient(to(left اوright اوtopاوbottom),
+          color-stop1, color-stop2, ...);
+        </code>
+        </li>
+        <li>
+            الشفافيه بتستخدم انك بضيف رقم رابع في اللون من0الي1 او باستخدام خاصية
+            الopcity
+        </li>
+        <li>
+            ال padding بيسيب مسافة داخليه الي هي داخل البوردروالmargin بيسيب مسافه
+            خارجيه يعني خارج الحدود يعني بيتنقل من مكانه ككل
+        </li>
+        <li>
+            لو عايز تخلي عنصر في النص بتديله عرض وبتعمل الخاصيه دي
+            <code dir="ltr">margin:0 auto;</code>
+        </li>
+        <li>
+            عرض العنصرين لما يزيد عن 100% مش هييجوا جمب بعض حتي ولو عاطي وع
+            <code dir="ltr">float:left;</code> وعرض العنصر بيساوي عرضه الاساسي
+            +البوردر بتاعه+المارجين او بيساوي العرض الاساسس+المارجين بس لما اكتب
+            الكود دا في اول الcss
+            <code dir="ltr">
+          html {box-sizing: border-box;}<br />
+          *, *:before, *:after {box-sizing: inherit;}</code>
+        </li>
+        <h3 style="text-align: center">
+            مثال
+            <code><i class="fa fa-hand-o-down" aria-hidden="true"></i></code> (انظر
+            الكود)
+        </h3>
+        <div style="border: 10px solid greenyellow; height: 280">
+            <article style="
+            margin: 10px;
+            width: 50%;
+            margin-right: 2px;
+            background-color: bfd200;
+            float: left;
+          ">
+                <h2 style="text-align: center">div1</h2>
+            </article>
+            <article style="
+            margin: 10px;
+            width: 50%;
+            background-color: bfd200;
+            float: left;
+            margin-top: 5px;
+          ">
+                <h2 style="text-align: center">div1</h2>
+            </article>
+            <hr style="margin-top: 170px; background-color: black; width: 100%" />
+            <article style="
+            margin: 10px;
+            width: 50%;
+            margin-right: 2px;
+            background-color: bfd200;
+            float: left;
+            margin-top: 5px;
+          ">
+                <h2 style="text-align: center">div1</h2>
+            </article>
+            <article style="
+            margin: 10px;
+            width: 30%;
+            background-color: bfd200;
+            float: left;
+            margin-top: 5px;
+          ">
+                <h2 style="text-align: center">div1</h2>
+            </article>
+        </div>
+        <li>
+            <code dir="ltr"> text-align:centre; </code>لو عايز العناصر في النص بس
+            بتتكتبها في التاجه الاب اللي بتحتوي العناصر دي
+        </li>
+        <li>
+            المواضع التلقاءيه للتاجات جمب بعض <code> inline</code> اوتحت بعض<code>
+          block</code>
+            انظر اللينك الاتي :- <br />
+
+            <a href="https://courses4arab.com/css/css-display.html" target="blank" class="btn">
+                <button>Courses 4 arab</button> </a>
+
+        </li>
+        <li>
+            العناصر الinline من عيوبها متعرفش تديها ويدز ولا هيت ولا حتي بادنج
+            فنخليها inline بس بتاخد صفات البلوك يعني تعرف تديها ويدز وهيت وهيص يعم
+            عن طريق الكود التالي : <code dir="ltr"> display: inline-block;</code>
+        </li>
+        <li>
+            <code dir="ltr"> display: none ;</code> بتحذف العنصر بمكانه اما
+            <code dir="ltr"> visablity:hidden;</code>بتخفي العناصر ومكانه بيبقي لسه
+            موجود
+        </li>
+        <li>اوعي تنسي تدي مارجين0لكل العناصر قبل متبدء في كتابة الcss</li>
+        <li>
+            العناصر الinline لما تديلها <code dir="ltr">display:block;</code> تعرف
+            تديلهاعرض وارتفاع
+        </li>
+        <li>{*}العلامه دي في cssيعني كل العناصر</li>
+        <li>
+            عندما نريد وضع <code> style</code> فقط للروابط التي لم يتم زيارتها فإننا
+            نستخدم الكود التالي: <code>a:link {property: value;} </code>
+        </li>
+        <li>
+            عندما نريد وضع <code> style</code> فقط للروابط التي تم زيارتها فإننا
+            نستخدم الكود التالي: <code>a:visited {property: value;} </code>
+        </li>
+        <li>
+            عندما نريد وضع style فقط للروابط التي يتم الضغط عليها بالماوس فإننا
+            نستخدم الكود التالي: <code>a:active {property: value;} </code>
+        </li>
+        <li>
+            عندما نريد وضع style فقط للروابط التي يتم تحديدها ب زر ال tab بالكيبورد
+            فإننا نستخدم الكود التالي:وغالبا ما يُستخدم هذا الكود مع عنصر ال input
+            الخاص بعمل الفورم <code>a:focus {property: value;} </code>
+        </li>
+        <li>
+            <span class="warning">⚠</span> إذا أردنا وضع العديد من هذه القيم لنفس
+            العنصر فيوجد قاعدتين لذلك هما: <br />
+            1- a:link and a:visited come first then a:hover <br />
+            2- a:hover come first then a:active
+        </li>
+        <li>لو عايز اللينك يفتح في صفحه جديده حط الاتريبيوت ده في تاجة ال a <code dir="ltr">target="blank"</code></li>
+        <li>
+            وبشكل افتراضي يكون مكان ال style الخاص بال list خارج حدود ال li ويُمكن
+            تغيير المكان ليصبح ال style داخل حدود ال li عن طريق الكود التالي:<code dir="ltr">list-style-position: inside;
+        </code>
+            وبشكل افتراضي تكون القيمة outside بدلاً من inside
+        </li>
+        <li>
+            لو عايزين نحذف الحواف السوداء الي بتظهر اول متقف بالماوس او ال Tab من
+            الكيبورد نستخدم الكود التالي: <code dir="ltr">outline: none;</code>
+        </li>
+        <li>
+            تاجة الtable انظر الكود
+
+            <table dir="ltr">
+                <caption>
+                    Final exam table
+                </caption>
+                <tr>
+                    <th>Material</th>
+                    <th>time</th>
+                    <th>date</th>
+                </tr>
+                <tr>
+                    <td>Compiler construction</td>
+                    <td>12:30-2:30</td>
+                    <td>10/01/2022</td>
+                </tr>
+                <tr>
+                    <td>Computer animation</td>
+                    <td>10:00-12:00</td>
+                    <td>11/01/2022</td>
+                </tr>
+                <tr>
+                    <td>Computer vision</td>
+                    <td>12:30-2:30</td>
+                    <td>13/01/2022</td>
+                </tr>
+                <tr>
+                    <td>Algorithem design</td>
+                    <td>12:30-2:30</td>
+                    <td>23/01/2022</td>
+                </tr>
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>12:30-2:30</td>
+                    <td>26/01/2022</td>
+                </tr>
+                <tr>
+                    <td>Human Rights</td>
+                    <td>12:30-2:30</td>
+                    <td>29/01/2022</td>
+                </tr>
+                <tr>
+                    <td>Wireless</td>
+                    <td>12:30-2:30</td>
+                    <td>31/01/2022</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            عند عمل جدول كبير الحجم من حيث العرض او الطول فإننا سوف نواجه مشكلة عدم
+            ظهور جزء من الجدول في حالة الشاشات الصغيرة مثل الموبايل؛ ونقوم بحل هذه
+            المشكلة عن طريق جعل الجدول يقوم بعمل scrolling بالماوس عند اختفاء جزء من
+            الجدول عن طريق الكود التالى: <br />
+            <ol>
+                <li>
+                    في حالة اختفاء جزء من عرض الجدول نستخدم:
+                    <code dir="ltr"> overflow-x: auto;</code>
+                </li>
+                <li>
+                    في حالة إذا كان الجدول طويل جدا وأردنا تحدد طول معين للجدول وباقي
+                    الجدول نوصل له بال scrolling بالماوس نستخدم:
+                    <code dir="ltr">overflow-y: auto;</code>
+                </li>
+                <li>
+                    ملحوظه الoverflow مش بتشتغل مع ال <code dir="ltr">float:left;</code>
+                </li>
+                <li>الoverflow بتتكتب في التاجه الي بتحتوي علي التاجه الاب</li>
+            </ol>
+        </li>
+        <li>إذا أردنا عمل حدود لعناصر الجدول فأننا نستخدم الكود التالي: <code dir="ltr">table, th, td { border: 1px solid black;}</code></li>
+        <li>نلاحظ وجود مشكلة في الكود العلوي هو ان جميع خلايا الجدول تكون حدودها عبارة عن خطين؛ وإذا أردنا تغيير ذلك لكي تُصبح خلايا الجدول عبارة عن خط واحد نستخدم الكود التالي: <code dir="ltr">table {border-collapse: collapse;}</code></li>
+        <li>
+            ال<code>position</code> بيحرك العنصر من مكانه لكن ال
+            <code>margin,padding </code>بيسيبو مسافه من اعلي اومن اسفل
+        </li>
+
+        <li>
+            <code dir="ltr"> position: relative;</code> بيتحرك بالنسبه لمكانه الاصلي
+            ومكانه بيفضل فاضي يعني مفيش حاجه بتيجي مكانه
+        </li>
+        <br /><br />
+        <span class="jc">
+            <u class="float">نبتدى بشرح الfloat</u>
+        </span>
+        <br />
+        <br />
+
+        <li>
+            معني float يعني يطفو يعني لما تدي الخاصيه دي لاي عنصر بيطفو علي الصفحه
+            يعني العناصر الي تحتيه بتيجي مكانه
+        </li>
+        <br />
+        <br />
+        <ul style="list-style: none;">
+            <span class="jc">
+                <u class="float" style="position: absolute; right: 42%">امتا بقا نستخدم الfloat يا قيادة؟
+                </u>
+            </span>
+
+            <br />
+            <br />
+
+            <li>
+                لجعل العناصر بجوار بعضها ابتدأ من اليمين او اليسار (يفضل ان تكون
+                العناصر دي متساوية في الارتفاع)
+            </li>
+            <li>لجعل عنصر مُعين في أقصي اليمين او اقصى اليسار</li>
+            <li>لوضع مُحتوي نصي بجوار عنصر معين مثل الصور</li>
+        </ul>
+        <span class="jc">
+            <u class="float"> مشاكل وحلول خاصية الfloat </u>
+        </span>
+        <br /><br />
+
+        <li>
+            <img src="image/CSS-FLOAT (1).jpg" alt="" />
+        </li>
+        <li>
+            ما الفرق بين وسم divووسم span وسم الـ div : يكون block بمعنى انه يكون
+            مُستقل بذاته بمعنى اخر يكون قبله وبعد عنصر br وسم الـ span : يكون inline
+            بمعنى انه لا يحدث له تغيير الا إذا قمنا بتنسيقه بواسطة لغة CSS
+        </li>
+        <br />
+        <div class="id">الفرق بين id & class</div>
+        <li>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>class</th>
+                        <th>id</th>
+                    </tr>
+                    <tr>
+                        <td>يُمكننا إضافة أكثر من قيمة الى ال class لنفس العنصر.</td>
+                        <td>
+                            ال id زي رقم البطاقة الشخصية بتاعتك كده وبالتالي <br>كل عنصر له قيمة
+                            id واحده مميزه عن الأخرى.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>يمكننا إضافة نفس قيمة ال class الى أكثر من عنصر.</td>
+                        <td>لا يُمكن إضافة نفس قيمة ال id الى أكثر من عنصر.</td>
+                    </tr>
+                    <tr>
+                        <td>قيمته تبدأ ب أحرف فقط ولا تبدأ بأرقام او رموز.</td>
+                        <td>قيمته تبدأ ب أحرف فقط ولا تبدأ بأرقام او رموز.</td>
+                    </tr>
+                    <tr>
+                        <td>عند تنسيق العنصر في لغة CSS فإن قيمته تبدا ب .</td>
+                        <td>عند تنسيق العنصر في لغة CSS فإن قيمته تبدا ب شباك #</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </li>
+        <li class="li"> <a href="https://docs.emmet.io/cheat-sheet/" target="_blank" class="btn"><button
+                    style="margin-top: 120px;">مهارات كتابة الكود</button></a> </li>
+        <li><code dir="ltr">background-color: transparent;</code> الكود ده بيكتب لو عايز الخلفيه شفافه يعني ماورائها
+            يظهر</li>
+
+        <br><br>
+        <span class="jc">
+            <u class="float">اهم حاجه في الCss ال<span class="fl">Flex box</span></u>
+        </span>
+        <li>ال flexbox يعتمد في الأساس ان يوجد عنصر أب (parent element) وعناصر داخل هذا الأب (child element)</li>
+        <br><br>
+        <li>الflex box بيتحكم في العناصر علي محور ال x او محور الy</li>
+
+        <div class="flex">
+            <div class="div1">
+                <ol>
+                    <h4>parent element</h4>
+                    <li><code dir="ltr">display: flex;         </code> </li>
+                    <li><code dir="ltr">flex-direction: row;   </code> </li>
+                    <li><code dir="ltr">flex-wrap: wrap;       </code> </li>
+                    <li><code dir="ltr">flex-flow: row wrap;   </code> </li>
+                    <li><code dir="ltr">justify-content: center;</code> </li>
+                    <li><code dir="ltr">align-content: center; </code> </li>
+
+                </ol>
+            </div>
+            <div class="div2">
+
+                <ol>
+                    <h4>child element</h4>
+                    <li><code dir="ltr">flex-grow:0;     </code> </li>
+                    <li><code dir="ltr"> flex shrink:1;  </code> </li>
+                    <li><code dir="ltr">flex-basis: auto;</code> </li>
+                    <li><code dir="ltr">flex: 0 1 auto;  </code> </li>
+                    <li><code dir="ltr">order: 0;        </code> </li>
+                </ol>
+            </div>
+        </div>
+
+        <li><code dir="ltr">display: flex;</code> <br> <br> وإذا أردنا الاستفادة من مميزات ال flexbox فإننا نضع
+            <code dir="ltr">display: flex;</code> للعنصر الاب ثم نستخدم باقي الاكواد التي بالأسفل. <br>وعندما نستخدم
+            هذا الكود يجب ان تعرف ان هناك المحور الأفقي (X-axis)
+        </li>
+        تابع الFlex box من هنا<i class="fa fa-hand-o-down" aria-hidden="true"></i><br>
+
+        <a href="https://courses4arab.com/css/css-flexbox.html"><button>Flex box</button></a> <br><br><br>
+        <a
+            href="https://codepen.io/enxaneta/full/adLPwv/?fbclid=IwAR0gu-b3HI92zE3fGMDgpaDAUaEf8cejbD5einlFQGUGYr7k95Q83iF1y7A">ودا
+            اهم <button>لينك </button> تقدر تتعلم من ال flexbox بالتطبيق</a><br>
+
+
+
+
+        <li>في حته كده مش هتلاقيها غير في الفديو بدل متتعب نفسك وتشغله وهي لو مش حافظ الاكواد اكتب كود واحد في
+            الcssالهو<code dir="ltr">display:flex;</code>واعمل inspect هتلاقي كل اكواد الflex وتنفيذها ليف كمان</li>
+        <li>الgrid بيتحكم في العناصر علي محور الxوالyمع بعض</li>
+        <li>في الجيرد انت بتقسم العنصر الاب الي صفوف واعمده وهميه وبعد كده بتحط العنصر في الصف والعمود الي انته عايزه
+        </li>
+        <li> ملحوظه علشان تستخدم خاصية ال <code>justify-content  </code> (التحكم في العناصر علي المحور الافقي),
+            <code>align content</code> (التحكم في العناصر علي المحورالرأسي) لازم تخلي حجم العناصر اقل من حجم العنصر الاب
+            كما بالاسفل لكن لما تستخم الfr بياخد المسافة المتبقية كلها
+        </li>
+        <li>الطريقه الاولي في الGridانظر الكود</li>
+        <div class="mygrid">
+            <header class="header">Header</header>
+            <div class="nav">Navigation Menu</div>
+            <aside class="a">aside</aside>
+            <aside class="a2"> aside</aside>
+            <main class="main">Main content</main>
+            <footer class="f"> Footer</footer>
+        </div>
+        <br>
+        <li>الطريقه التانيه في الGridانظر الكود</li>
+        <span class="jc">
+            <u class="float">grid-area</u>
+        </span>
+        <br>
+
+
+
+
+        <div class="grid2">
+            <header class="head2">
+                <button class="b"> Home </button>
+                <button class="c">Html</button>
+                <button class="c">css</button>
+                <button class="c">java script</button>
+                <button class="d">Contact us</button>
+
+
+            </header>
+            <div class="n2">Navigation Menu</div>
+            <aside class="s1">aside</aside>
+            <aside class="s3"> aside</aside>
+            <main class="m2">Main content</main>
+            <footer class="fo2"> Footer</footer>
+        </div>
+        <br>
+        <div id="tran"> سهيله</div>
+        <li>لو عايز الانيماشن متخطفش معاك خلي القيمه الابتدائيه0% نفس النهائيه100%</li>
+        <li> الmedia query بيتم استخدامها لما تبقا عايز الموقع بتاعكresponsiveمع حجم الشاشات والوضع الليلي</li> <br>
+        <br>
+        <li>طريقة كتابة اكواد css للموقع في الوضع الليلي <br> 1-  لو عايز تكتب في نفس الملف الاساسي عن طريق الكود التالي<code dir="ltr">@media (prefers-color-scheme: dark or light) {
+            h1 {color: black;}
+          }</code> <br> او ممكن تعمل ملفين css لوحديهم واحد للdark والتاني للlight عن طريق الكود التالي <br> 2- ملفين css غير الملف الاساسي ل <br><code dir="ltr">&lt;link rel="stylesheet" href="main.css"&gt; <br> &lt;link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)"&gt; <br> &lt;link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)"&gt;</code></li>
+
+        <li>يُفضل استخدام هؤلاء الثلاث أنواع من الصور فقط JPEG, GIF, and PNG</li>
+        <li>علشان تخلي الصوره مستجبيه مع حجم الشاشات اعمل الارتفاع اوتو علشان الارتفاع ميثبتش</li>
+        <li>يوجد خاصية جديدة في ال CSS تُسمي Lazy loadingوظيفتها عدم إظهار الصور في الموقع الا اذا احتجنا اليها </li>
+        <li> نستخدم خاصية lazy load عن طريق إضافة attribute يُسمي loading الي عنصر ال <img /> وتكون قيمته lazy
+            ويكون الكود النهائي كالتالي: <code dir="ltr">&lt; img src="example.jpg" loading="lazy" alt="..." /> 
+            </code></li>
+        <li> تاجة الpicture بيتم استخدامها لو احب اعرض كذا صوره علي احجمام الشاشات المختلفه وبتم استخدامها كالاتي:
+            <br><code dir="ltr">&lt;picture&gt; <br>
+            &lt;source media="(max-width: 500px)" srcset="your image source"&gt; <br>
+             &lt;img src="your image source" alt="ali hassan"&gt;  <br>
+           &lt;/picture>&gt; </code>
+        </li>
+        <li> العنصر الabsolute يتحرك بالنسبة ل اقرب عنصر أب يحتوى على قيمة للposition؛ وفى حالة عدم وجود عنصر اب يحتوى
+            على قيمة للposition.ف انه يتحرك بالنسبة لحدود الصفحة.</li>
+        <li>العنصر الabsolute يخرج من الترتيب المنطقي له وان العنصر الذي يله في ملف ال html سوف يحل محله مثل العنصر ال
+            fixed</li>
+        <li> ctrl+i بتعمل عنصر اب </li>
+        <li>لمانعوز نخفي تكست ونظهره في الهوفر بندي display none للchild ونروح في الهوفر نوصله عن طريق الاب ونديله
+            display block كاالاتي <code> child{
+            display: none;
+            } <br> <br>
+            parant:hover child{
+                    display: block;
+        
+            }
+            او الopacityويفضل ذالك لانك هتعرف تنتقل بسلاسه ونعومه بالtransition
+        </code> </li>
+        <li class="fon">علشان تحدد نوع الخط حدد الاول نوع اللغه في العنصر الاب عن™ طريق الكود التالي<code
+                dir="ltr">lang="en or ar"</code></li>
+        <li>مش لازم فونت اوسوم علشان تكتب ايقون ممكن تتكتبها كhtmlكود او css ودا لينك بعض الايكونس</li>
+        <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="blank"><button
+                style="margin-right: 50%;">icons</button></a>
+        <br>
+        <a href="https://www.w3schools.com/charsets/ref_emoji_smileys.asp" target="blank"><button
+                style="margin-right: 50%; margin-top: 20px;"> Fasebook Emoji</button></a>
+        <li>أفضل بديل لمكتبة Font Awesome هو موقع &ensp;<a href="https://icomoon.io/" target="blank"> <button>icon
+                    moon</button></a> &ensp; ولكن يتم تحميل الايكونس المر
+            اد استخدامهاعلي الجهاز كملف cssوملف fonts بجوار ملفات الcss</li>
+        <li>جميع انواع الselectors هتلاقيها هنا &ensp; <a href="https://www.w3schools.com/cssref/css_selectors.asp"
+                target="blank"> <button>All selectors</button></a></li>
+        <li>الbackground-image بيتم استخدامها بدل من تاجة الimg عندما تكون الصورة تعبر عن منظر جمالي للصفحه وبيتم
+            استخدامها كالاتي <br> بتعمل div وبتديله height و الاكواد التاليه في الcss <br> <code
+                dir="ltr">background-image: url(مسار الصوره );</code> &emsp; يُستخدم هذا الكود لعمل صورة خلفية لأي عنصر
+            من عناصر ال HTML <br> <code dir="ltr">background-repeat: ***;</code> &emsp; يستخدم هذا الكود لتكرار الصوره
+            علي المحور الافقي اوالراسي او عدم تكرارها وهكذا <br> <code dir="ltr"> background-position: ***;</code> مكان
+            الصور داخل الdiv <br> <code dir="ltr">background-size: الطول العرض;</code> حجم الصوره <br>
+
+            <span>⚠</span> و <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_background_hero"
+                target="blank"> <button>هنا</button></a> تجد مثال مُحترم علي جميع الأكواد التي بالأعلي 👆
+        </li>
+        <li>تتميز خاصية ال CSS background-image بأنه يُمكن تغيير الصورة لصورة أخري بسلاسة و نعومة عند عمل hover عليها عن
+            طريق خاصية ال transition
+            مثال علي ذلك:
+            <span class="icon-hand-o-left"></span>
+            <a href="file:///E:/web/backgroud.html" target="blank"> <button>background</button></a>
+        </li>
+
+        <li>لما تبقي عايز تكتب علي صوره بتدي للعنصر الاب بتاعها <code dir="ltr">position:relative;</code> وبتدي العنصر
+            الي انت عايز تظهره<code dir="ltr">position:absolute;</code> مثال علي ذالك انظر لينك ال <span
+                class="icon-hand-o-up"></span>background
+            لكن لما بتدي الصوره عن طريق الbackground-image الكتابه او الباتون او اي شئ بيبقي فوق الصوره </li>
+        <li><code dir="ltr"> position:relative;</code> العنصر بيتحرك بالنسبةلموقعه الاصلي بينما <code
+                dir="ltr"> position:absolute;</code> بيتحرك بالنسبه لاقرب عنصر اب</li>
+        <li><code dir="ltr">position:statick;</code> العنصر بيرجع لوضعه الافتراضي وبتستخدمه في الmedia query </li>
+        <li> لما تبقي عايز تعمل reset لل button بكود واحد بتكتب الكود ده في الاول علشان لما بيكتب في الاخر بيلغي
+            التنسيقات اللي انته عاملها <code dir="ltr">all:unset; </code></li>
+        <li> لو عايز تثبت الجزء اليمين او اليسار للصوره عند التكبير او التصغير بتدي <code
+                dir="ltr">background-position:right or left;</code></li>
+        <li>لو عايز الصوره في المنتصف اديها display block , margin 0 auto</li>
+        <li>علشان تدي خلفيتين لنفس الديف بتستخدم::before </li>
+        <li>الimage sprit بتدمج كذا صوره كصوره واحده وبتعرضهم في الموقع بتاعك بال background-image بس بتدي ويدز وهيت
+            للمكان اللي انته عايزه وبتحرك الصوره بال background-position لحد متوصل لجزء الصوره اللي انته عايزه وده
+            الموقع الي بيدمج الصور <a href="https://spritegen.website-performance.org/"><button>image sprit</button></a>
+        </li>
+        <li> القيمه inherit يعني العنصر بيرث نفس خصائص العنصر الاب وبتديها للcolor او اي اتريبيوت تاني</li>
+        <li><code dir="ltr">text-decoration-line: ***;</code>لو عايز تحط خط تحت او فوق او علي الكلام <br> &emsp;
+            &emsp;<code dir="ltr">text-decoration-color: *** ;</code>بيحط لون للخط اللي تحت الكلام <br> &emsp;
+            &emsp;<code dir="ltr"> Text-transform: ***;</code>بيتحكم في نوع الكلام capital or small <br> &emsp;
+            &emsp;<code dir="ltr"> Text-indent: ***;</code> بيتحكم في حجم المسافه اللي في بداية الكلام <br> &emsp;
+            &emsp;<code dir="ltr">Letter-spacing: ***;</code> المسافه بين الحروف <br>&emsp; &emsp;<code
+                dir="ltr">Letter-spacing: ***;</code> المسافه بين الكلمات <br> &emsp; &emsp;<code
+                dir="ltr">Line-height: ***;</code> المسافه بين السطور</li>
+        <li><code dir="ltr">text-underline-offset: ***;</code> ويُستخدم هذا الكود للتحكم في المسافة بين ال text و الخط
+            الخاص ب الـــ text-decoration-line
+            <br><span>⚠</span> ولكن العديد من المتصفحات لا تدعم هذا الكود وبالتالي يُفضل استخدام <code
+                dir="ltr">border-bottom: 2px solid red; </code> بدلا من <code
+                dir="ltr">text-decoration-line: underline;</code> حتى يُمكننا التحكم في بُعد الخط عن الــ text باستخدام
+            خاصية ال padding-bottom
+        </li>
+        <li> <code dir="ltr" style="margin-bottom: 20px;">box-shadow: x y blur-radius color ;</code>
+            <div style="margin-left: 20px; margin-top: -15px; width: 17%; text-align: center;line-height: 35px;"><br> X:
+                المسافة الافقية<br> y: المسافة الرأسية<br>-blur-radius: تدرج لون الظل<br>-color: مش محتاجة يعني
+                😂<br>وال text-shadw نفس الفكره بردو <br>في قيمه رابعه للboxshadw الي هي inset وده لو عايز الظل من
+                الداخل لانه اوتوماتيك من الخارج</div>
+        </li>
+        <li>لو عندك كلام كتير عايز تظهره في جزء صغير فانت في حالتين يتخفي بقيت الكلام عن طريق الكود د <code
+                dir="ltr">overflow: hidden;</code> اوتعمل لبقيت الكلام سكرول عن طريق الكود ده <code
+                dir="ltr">overflow: scroll or auto;</code> ولو عايز تتحكم انك تكبر بقي المكان ده وتصغره بتكتب الكود ده
+            مع الoverflow <code dir="ltr">resize:both;</code></li>
+        <div class="units"> <img src="image/units.jpg" alt=""> </div>
+        <li> absolute يعني احجام ثابته<br>&emsp; &emsp; relative يعني احجام متجاوبه مع احجام الشاشات المختلفه <br>&emsp;
+            &emsp;&emsp; &emsp; vm وحدة قيلس لعرض الشاشات الحاليه <br>&emsp; &emsp;&emsp; &emsp; vh وحدة قياس لطول
+            لشاشات الحاليه <br>&emsp;&emsp;&emsp;&emsp;&emsp; % يعني العنصر بياخد طوله او عرضه من العنصر الاب بتاعه</li>
+        <li>ممكن وحده القياس تكون عمليه حسابيه calc(100%-100px)</li>
+        <li>لما تيجي تدي حجم للخط اديله باالrem اوالem علشان لما اليوسر يجي يغير حجم الخط بتلع المتصفح يتغير معاه <br>
+            &emsp;&emsp;&emsp;&emsp; rem: Relative to font-size of the Root element <br> &emsp;&emsp;&emsp;&emsp; em:
+            Relative to font-size of the element</li>
+        <li>الاكواد الخاصه بالscrollbar<code dir="ltr">::-webkit-scrollbar {width: 1.1rem;} </code> ده لو هتدي عرض
+            للسكرول <br> <code dir="ltr">::-webkit-scrollbar-track {
+            border: 7px solid #232943;
+            box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 1rem;
+            } </code> الtrak يعني المكان اللي بيتحرك فيه السكرول <br><code dir="ltr"> ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(270deg, #9e4673, #3d4a59, #9e4673);
+              }</code> ده لو عايز تنسق السكرول نفسه اللي هو اسمه thumb <br> <span>⚠</span> لو الاكواد مشتغلتش علي
+            firefoxبتكتب الاكو دي <code dir="ltr"> html {scrollbar-(color or width): #9e4673 #3d4a59 or value;} </code>
+            <br>قيمه اللون الاولي خاصه بال thumb والتانيه بالتراك
+        </li>
+        <li>
+            <section style="text-align: center;">
+                <u class="float"> توسيط العناصر افقيا ورأسيا</u>
+            </section>
+        </li>
+        <br><br><br>
+        <details>
+            <summary> <u class="float"> 1- توسيط الtext داخل عنصر بلوك وذالك عن طريق الكود التالي</u></summary>
+            <br><br><br>
+            <code dir="ltr"> text-align: center;</code>
+        </details>
+        <br><br><br>
+        <details>
+            <summary> <u class="float">2- إذا كان العنصر block</u></summary><br><br><br>
+            فيتم إضافة له الاكواد الأتية: <br>
+            <code dir="ltr"> Width: ***; <br>
+                    margin-left: auto;<br>
+                    margin-right: auto;</code>
+
+        </details>
+        <p style="font-size: 2em;"><span>⚠</span> هذه الاكواد تقوم بتوسيط العنصر وليس ال text الذي بداخل هذا العنصر.
+            ولكن إذا أردنا أيضا توسيط ال text الذي بداخل العنصر فنستخدم <code dir="ltr">text-align: center;</code> </p>
+        <details>
+            <summary><u class="float"> 3- توسيط أكثر من عنصر block</u></summary><br><br>
+            <details>
+                <summary>
+                    <p style="font-weight: 500; display: inline;
+                            font-size: 1.8rem;
+                            color: #4169e1;">3.1- الطريقة الاولي</p>
+                </summary>
+                <p style="font-size: 2em;">- وذلك عن طريق وضع هذه العناصر الــ block داخل عنصر اب ونضع الكود التالي
+                    للعنصر الاب <code dir="ltr">text-align: center;</code> - ثم نضع الكود التالي للعناصر الـــ child
+                    <code dir="ltr">display: inline-block;</code>
+                </p>
+            </details><br><br>
+            <details>
+                <summary>
+                    <p style="font-weight: 500; display: inline;
+                            font-size: 1.8rem;
+                            color: #4169e1;"> 3.2- الطريقة الثانية بإستخدام الـــــ grid</p>
+                </summary>
+                <p style="font-weight: 500; display: inline;
+                            font-size: 1.8rem;"">وذلك عن طريق إضافة الأكواد التالية للعنصر الأب<br></p>
+                            <code dir=" ltr">display: grid; <br>
+                    justify-content: center;</code>
+            </details><br><br>
+            <details>
+                <summary>
+                    <p style="font-weight: 500; display: inline;
+                            font-size: 1.8rem;
+                            color: #4169e1;"> 3.3- الطريقة الثالثة بإستخدام الـــــ flexbox</p>
+                </summary>
+                <p style="font-weight: 500; display: inline;
+                            font-size: 1.8rem;"">وذلك عن طريق إضافة الأكواد التالية للعنصر الأب<br></p>
+                            <code dir=" ltr">display: flex; <br>
+                    justify-content: center;</code>
+            </details>
+
+
+        </details><br><br><br>
+        <section style="text-align: center;">
+            <u class="float">توسيط العناصر رأسيا</u>
+        </section>
+        <br><br>
+
+
+        <details>
+            <summary><u class="float">4- إذا كان العنصر inline او block</u></summary><br><br><br>
+            <details>
+                <summary>
+                    <p style="font-weight: 500; display: inline;
+                        font-size: 1.8rem;
+                        color: #4169e1;"> 4.1- باستخدام خاصية ال flexbox</p>
+                </summary><br><br>
+                <p style="font-weight: 500; display: inline;
+                        font-size: 1.8rem;"">وذلك عن طريق إضافة الأكواد التالية للعنصر الأب<br></p>
+                        <code dir=" ltr">.parent {
+                    display: flex; <br>
+                    flex-direction: column;<br>
+                    justify-content: center;
+                    }</code>
+            </details>
+            <br>
+            <details>
+                <summary>
+                    <p style="font-weight: 500; display: inline;
+                        font-size: 1.8rem;
+                        color: #4169e1;"> 4.2- باستخدام خاصية ال Grid</p>
+                </summary><br><br>
+                <p style="font-weight: 500; display: inline;
+                        font-size: 1.8rem;"">وذلك عن طريق إضافة الأكواد التالية للعنصر الأب<br></p>
+                        <code dir=" ltr">.parent {
+                    display: grid;<br>
+                    justify-content: center;<br>
+                    align-items: center;}
+                    </code>
+            </details>
+
+        </details>
+        <li>الفرق بين ال align-items: center; ,align-content: center; ان الايتم بيحترم خصائص كل عنصر والكونتنت لو غيرت
+            في خصائص عنصر من العناصر باقي العناصر بتتغير</li>
+        <LI> لما تدي للويدز الخاصيه دي fit-content معني كدا ان العرض بيبقي علي قد المحتوي مثال علي ذالك رقم 6<a
+                href="file:///E:/web/try2.html" target="blank"> <button> fit-content</button></a></LI>
+        <br><br>
+
+
+        <section style="text-align: center;">
+            <u class="float"> توسيط العناصر التى تحتوى على خاصية الــ position</u>
+        </section>
+        <br><br><br>
+        <details>
+            <summary>
+                <u class="float">1- توسيط الـ text فى المُنتصف</u>
+
+            </summary><br><br>
+            <code dir="ltr">position: absolute || fixed;<br>
+                        left: 50%; <br>
+                        transform: translateX(-50%);</code>
+        </details><br><br> <br>
+        <details>
+            <summary>
+                <u class="float">2- توسيط الـ العنصر فى المُنتصف</u>
+
+            </summary><br><br>
+            <code dir="ltr">position: absolute || fixed;<br>
+                        left: 50%;<br>
+                        transform: translateX(-50%);</code>
+        </details><br><br> <br>
+        <details>
+            <summary>
+                <u class="float">3-توسيط الـ العنصر رأسيا </u>
+
+            </summary><br><br>
+            <code dir="ltr">position: absolute || fixed;<br>
+                        top: 50%;<br>
+                        transform: translatey(-50%);</code>
+        </details><br><br> <br>
+        <details>
+            <summary>
+                <u class="float">4-توسيط الـ العنصر رأسيا وافقيا</u>
+
+            </summary><br><br>
+            <code dir="ltr">position: absolute || fixed;<br>
+                        top: 50%;<br>
+                        left: 50%;<br>
+                        transform: translate(-50%,-50%);</code>
+        </details>
+
+        <div style="text-align: center;">
+            <a href="file:///E:/web/try2.html" target="blank"> مثال علي ذالك رقم7 &ensp;<button> centre</button></a>
+
+        </div>
+        <li><a href="https://www.youtube.com/watch?v=c1YcRIHAt68&list=PLZyQU-WOzZF2cNkPKrjSRSOQYNh72qn1p&index=1" target="blank"> كورس Bootstrab&ensp;<button> Bootstrab</button></a></li>
+        <li><a href="https://www.youtube.com/watch?v=Di_RlcpkpN4&list=PLDoPjvoNmBAzlpyFHOaB3b-eubmF0TAV2&index=1" target="blank"> كورس SASS&ensp;<button> SASS</button></a></li>
+        <li>الكود ده بيخفي العنصر <code dir="ltr">display:none;</code></li>
+        <li>            <a href="http://minifycode.com/css-minifier/" target="blank"> الموقع ده لضغط الاكواد &ensp;<button> minifycode</button></a>
+        </li>
+        <li>العناصر ال inline , inline-block بيتحدد عرضها وطولها علي حسب المحتوي الذي بداخلها فإذا كان المحتوي نص وجيت عطيته الكود ده<code dir="ltr">text-align:centre;</code> مش هيجي في منتصف الشاشه الا اذا عطيته<code dir="ltr"> display:block;</code></li>
+        <li>الtextarea لو عايز تثبتها متكبش ولا تصغر تدي الكود ده <code dir="ltr">min-height: 125px;<br> max-height: 125px;</code> </li>
+        <li> <span style="all:unset; font-size: 30px; " dir="ltr">What is W3C ?</span>  <br>
+            W3C هي اختصار لــ World Wide Web Consortium وهي باختصار المُنظمة المسئولة عن تنظيم وتحديد المعايير الخاصة بالويب وهي أيضا المُنظمة المسئولة عن تحديث وتطوير لغة ال CSS و ال html والموقع الرسمي هو:<a href="https://www.w3.org/" target="blank" > <button>w3.org</button> </a></li>
+    <a href="#first"><span class="icon-hand-o-up ni"></span></a>
+
+</body>
+
+</html>
